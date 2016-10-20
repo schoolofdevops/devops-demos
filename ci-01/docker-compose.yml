@@ -1,0 +1,31 @@
+version: '2'
+services:
+  jenkins:
+    image: jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - /docker/jenkins_home:/var/jenkins_home
+    container_name: jenkins
+
+  artifactory:
+    image: docker.bintray.io/jfrog/artifactory-oss
+    ports:
+      - "8081:8081"
+    container_name: artifactory-oss
+
+  sonarqube:
+    image: sonarqube
+    ports:
+      - "9000:9000"
+      - "9092:9092"
+    container_name: sonarqube
+
+  tomcat:
+    image: tomcat
+    ports:
+      - "8888:8080"
+    volumes:
+      - /docker/tomcat/usr/local/tomcat/conf/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+    container_name: tomcat
