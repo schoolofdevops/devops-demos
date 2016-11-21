@@ -2,7 +2,7 @@
 apt update
 apt-get -y install python-pip
 PKG_OK=$(pip show='${Status}\n' docker|grep "Docker-compose is already installed")
-echo Checking for Docker-compose: $PKG_OK
+echo Checking for docker-engine: $PKG_OK
 if [ "" == "$PKG_OK" ]; then
   echo "No Docker-compose found. Setting up."
   wget -qO- https://get.docker.com/ | sh
