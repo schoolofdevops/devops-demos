@@ -6,6 +6,6 @@ if ls 2> /dev/null | grep -q -i "docker-elk"; then
 else
   git clone https://github.com/deviantony/docker-elk.git
 fi
-cd docker-elk
+cd /home/ubuntu/docker-elk
 sysctl -w vm.max_map_count=262144
 docker-compose up -d

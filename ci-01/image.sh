@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /docker/jenkins_home/
-#docker build -t tomcatapp .
+docker build -t tomcatapp .
 #Username and Password for local docker registry
 USER="admin"
 PASS="1nitCr0n"
