@@ -235,3 +235,9 @@ image script (image.sh)
   ```
   docker service create --replicas 6 --publish 8080:8080 --name tomapp initcronregistry.org/tomcatapp
   ```
+# C Advisor in Swarm worker nodes
+
+```
+sudo docker run   --volume=/:/rootfs:ro   --volume=/var/run:/var/run:rw   --volume=/sys:/sys:ro   --volume=/var/lib/d ocker/:/var/lib/docker:ro   --publish=9090:8080   --detach=true   --name=cadvisor google/cadvisor:latest
+
+```
