@@ -7,19 +7,15 @@ sudo apt-get -y update
 # Update package information, ensure that APT works with the https method, and that CA certificates are installed.
 sudo apt-get -y install apt-transport-https ca-certificates
 # Add the new GPG key.
-sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-# Add docker.list 
-sudo echo "deb https://apt.dockerproject.org/repo ubuntu-trusty experimental" > /etc/apt/sources.list.d/docker.list
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+# Add docker.list
+sudo echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" | sudo tee /etc/apt/sources.list.d/docker.list
 # Update your APT package index.
 sudo apt-get -y update
-# Purge the old repo if it exists.
-sudo apt-get purge lxc-docker
 # Verify that APT is pulling from the right repository.
 sudo apt-cache policy docker-engine
 # Install the recommended package.
 sudo apt-get -y install linux-image-extra-$(uname -r)
-# Ubuntu 14.04 or 12.04, apparmor is required.
-sudo apt-get -y install apparmor
 # Install Docker.
 sudo apt-get -y install docker-engine
 # Start the docker daemon.
