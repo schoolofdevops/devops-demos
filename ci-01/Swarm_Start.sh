@@ -5,4 +5,4 @@ else
         docker service create --replicas 3 --publish 8080:8080 --log-driver=syslog  --log-opt syslog-address=tcp://192.168.0.56:5000 --name tomapp initcronregistry.org/tomcatapp
 
 fi
-docker service create --replicas 3 --publish
+#docker service create --replicas 3 --publish
