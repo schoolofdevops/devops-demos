@@ -6,8 +6,8 @@ else
 
 fi
 
-if docker service ls 2> /dev/null | grep -q -i "cadvisor"; then
-        echo "Service is already running"
-else
-        docker service create --replicas 3 --publish=9090:8080 --name cadvisor google/cadvisor
-fi
+#if docker service ls 2> /dev/null | grep -q -i "cadvisor"; then
+#        echo "Service is already running"
+#else
+#        docker service create --replicas 3 --publish=9090:8080 --name cadvisor google/cadvisor
+#fi
