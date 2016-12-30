@@ -5,8 +5,8 @@ services:
   jenkins:
     image: jenkins
     ports:
-      - "5050:8080"
-      - "60000:50000"
+      - "8080:8080"
+      - "50000:50000"
     volumes:
       - /docker/jenkins_home:/var/jenkins_home
     container_name: compose-jenkins
@@ -14,7 +14,7 @@ services:
   artifactory:
     image: docker.bintray.io/jfrog/artifactory-oss
     ports:
-      - "7071:8081"
+      - "8081:8081"
     volumes:
       - /artifactory/data:/var/opt/jfrog/artifactory/data
       - /artifactory/logs:/var/opt/jfrog/artifactory/logs
@@ -24,8 +24,8 @@ services:
   sonarqube:
     image: sonarqube
     ports:
-      - "7000:9000"
-      - "7072:9092"
+      - "9000:9000"
+      - "9092:9092"
     container_name: compose-sonarqube
 
   tomcat:
