@@ -1,11 +1,13 @@
 ---
-- name: Update apt cache
+- name: Update apt cache and Install python-pip
   apt:
     update_cache: yes
-- name: Install Python-Pip
-  apt:
     name: python-pip
     state: latest
 - name: Install Docker Compose
   pip:
     name: docker-compose
+- name: Copy the compose file
+  copy:
+    src: files/ci-compose.yml
+    dest: ci/ci-compose.yml
