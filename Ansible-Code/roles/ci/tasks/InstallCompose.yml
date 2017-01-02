@@ -5,10 +5,10 @@
     update_cache: yes
 - name: Install apt-transport-https and ca-certificates
   apt:
-    name: { item }
+    name: "{{ item }}"
     with_items:
-      - { apt-transport-https }
-      - { ca-certificates }
+      - apt-transport-https
+      - ca-certificates
 - name: Add apt key
   apt_key:
     keyserver: hkp://ha.pool.sks-keyservers.net:80
