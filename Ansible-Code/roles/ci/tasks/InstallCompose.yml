@@ -1,5 +1,4 @@
 ---
 - name: Update apt cache
   apt:
-    name: python-pip
     update_cache: yes
