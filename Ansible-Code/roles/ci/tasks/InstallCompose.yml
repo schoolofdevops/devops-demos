@@ -9,17 +9,17 @@
     name: docker-compose
 - name: Create CI directory
   file:
-    name: ~/ci
+    name: ci
     state: directory
 - name: Copy the compose file
   copy:
     src: files/ci-compose.yml
-    dest: ~/ci/docker-compose.yml
+    dest: ci/docker-compose.yml
     mode: 0755
 - name: Docker compose up
   docker_service:
     project_name: ci
-    project_src:  ~/ci
+    project_src:  ci
     state:  present
   register: vijay
 
