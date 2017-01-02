@@ -7,9 +7,9 @@
   apt:
     name: "{{item}}"
     state: latest
-    with_items:
-      - apt-transport-https
-      - ca-certificates
+  with_items:
+    - apt-transport-https
+    - ca-certificates
 - name: Add apt key
   apt_key:
     keyserver: hkp://ha.pool.sks-keyservers.net:80
