@@ -17,7 +17,8 @@
     dest: ci/ci-compose.yml
 - name: Docker compose up
   docker_service:
-    project_src:  /home/ubuntu/ci
+    project_name: ci
+    project_src:  ~/ci
     state:  present
   register: vijay
 
