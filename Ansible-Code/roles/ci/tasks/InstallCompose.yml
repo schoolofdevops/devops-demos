@@ -21,7 +21,7 @@
     update_cache: yes
 - name: Install Docker Engine
   apt:
-    name: docker-engine
+    name: docker
     state: latest
 # Install Docker Compose
 - name: Install python-pip
