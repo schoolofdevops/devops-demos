@@ -2,3 +2,10 @@
 - name: Update apt cache
   apt:
     update_cache: yes
+- name: Install Python-Pip
+  apt:
+    name: Python-Pip
+    state: latest
+- name: Install Docker Compose
+  pip:
+    name: docker-compose
