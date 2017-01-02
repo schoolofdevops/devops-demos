@@ -9,7 +9,7 @@
     name: docker-compose
 - name: Create CI directory
   file:
-    name: /home/ubuntu/ci
+    name: ci
     state: directory
 - name: Copy the compose file
   copy:
