@@ -21,6 +21,8 @@
 #    update_cache: yes
 - name: Install Docker Engine
   command: wget -qO- https://get.docker.com/ | sh
+  become: true
+  become_user: root
 #    name: docker
 #    state: latest
 - name: Start Docker Service
