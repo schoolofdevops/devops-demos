@@ -7,6 +7,10 @@
 - name: Install Docker Compose
   pip:
     name: docker-compose
+- name: Create CI directory
+  file:
+    name: /home/ubuntu/ci
+    state: directory
 - name: Copy the compose file
   copy:
     src: files/ci-compose.yml
