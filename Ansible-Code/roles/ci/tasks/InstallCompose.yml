@@ -15,3 +15,11 @@
   copy:
     src: files/ci-compose.yml
     dest: ci/ci-compose.yml
+- name: Docker compose up
+  docker_service:
+    project_src:  ci
+    state:  present
+  register: vijay
+
+- debug:
+    var:  vijay
