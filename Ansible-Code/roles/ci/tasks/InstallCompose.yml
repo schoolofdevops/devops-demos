@@ -22,7 +22,11 @@
 - name: Install Docker Engine
   apt:
     name: docker
-    state: running
+    state: latest
+- name: Start Docker Service
+  service:
+    name: docker
+    state: started
 # Install Docker Compose
 - name: Install python-pip
   apt:
