@@ -1,2 +1,3 @@
 ---
 - include: InstallCompose.yml
+- include: ComposeUp.yml
