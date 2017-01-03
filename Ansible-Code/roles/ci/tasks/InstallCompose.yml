@@ -67,8 +67,6 @@
   become_user: root
   docker_service:
     project_name: ci
-#    project_src:  ci
-#    state:  present
     definition:
       version: '2'
       services:
