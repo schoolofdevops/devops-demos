@@ -47,6 +47,7 @@
     name: docker/jenkins_home
     state: directory
     recurse: yes
+    mode: 0777
 - name: Creat tomcat directory
   file:
     name: docker/tomcat
