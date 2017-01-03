@@ -42,6 +42,11 @@
   file:
     name: docker
     state: directory
+- name: Creat tomcat directory
+  file:
+    name: docker/tomcat
+    state: directory
+    recurse: yes
 - name: Copy the compose file
   copy:
     src: files/ci-compose.yml
