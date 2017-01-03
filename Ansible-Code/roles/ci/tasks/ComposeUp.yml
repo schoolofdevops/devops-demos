@@ -63,7 +63,7 @@
           volumes:
             - /home/ubuntu/docker/tomcat/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
           container_name: compose-tomcat
-register: test
+  register: test
 
 - debug:
-var:  test
+  var:  test
