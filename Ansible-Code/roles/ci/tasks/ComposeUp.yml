@@ -66,4 +66,4 @@
   register: test
 
 - debug:
-  var:  test
+    var:  test
