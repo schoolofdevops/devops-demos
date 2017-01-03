@@ -38,15 +38,19 @@
 - name: Install Docker Compose
   pip:
     name: docker-compose
-- name: Create CI directory
+- name: Create work directory (/home/ubuntu/docker)
   file:
-    name: ci
+    name: docker
     state: directory
 - name: Copy the compose file
   copy:
     src: files/ci-compose.yml
-    dest: ci/docker-compose.yml
+    dest: docker/docker-compose.yml
     mode: 0755
+- name: Copy tomcat configurations
+  copy:
+    src: files/tomcat-users.xml
+    dest: docker/tomcat/tomcat-users.xml
 - name: Docker compose up
   docker_service:
     project_name: ci
