@@ -42,6 +42,11 @@
   file:
     name: docker
     state: directory
+- name: Create jenkins directory
+  file:
+    name: docker/jenkins_home
+    state: directory
+    recurse: yes
 - name: Creat tomcat directory
   file:
     name: docker/tomcat
