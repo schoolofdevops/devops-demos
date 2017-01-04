@@ -4,7 +4,7 @@ jenkins_params_plugins:
   url_username: admin
   url_password: 1nitCr0n
   jenkins_home: /home/ubuntu/docker/jenkins_home
-  validate_certs: False
+#  validate_certs: False
 
 jenkins_params_jobs:
   url:  http://192.168.0.73:8080
