@@ -1,0 +1,10 @@
+---
+jenkins_params_plugins:
+  url: http://192.168.0.73:8080
+  url_username: admin
+  url_password: 1nitCr0n
+
+jenkins_params_jobs:
+  url:  http://192.168.0.73:8080
+  user: admin
+  password: 1nitCr0n

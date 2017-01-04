@@ -1,3 +1,4 @@
 ---
 - include: InstallCompose.yml
 - include: ComposeUp.yml
+- include: Jenkins.yml
