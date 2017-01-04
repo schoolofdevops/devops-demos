@@ -1,4 +1,8 @@
 ---
+- name: Create Jenkins user
+  user:
+    name: jenkins
+    group: jenkins
 - name: Install Build Pipeline Plugin
   jenkins_plugin:
     name: build-pipeline-plugin
