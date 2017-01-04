@@ -24,7 +24,7 @@
     params: "{{ jenkins_params_plugins }}"
 - name: Install SonarQube Plugin
   jenkins_plugin:
-    name: sonarqube
+    name: sonar
     state: latest
     params: "{{ jenkins_params_plugins }}"
 - name: Install Artifactory Plugin
