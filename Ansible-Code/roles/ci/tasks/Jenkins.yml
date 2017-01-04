@@ -1,4 +1,8 @@
 ---
+- name: Create Jenkins group
+  group:
+    name: jenkins
+    state: present
 - name: Create Jenkins user
   user:
     name: jenkins
