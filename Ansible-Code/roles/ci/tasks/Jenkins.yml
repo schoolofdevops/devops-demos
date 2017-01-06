@@ -10,33 +10,65 @@
 - name: Install Build Pipeline Plugin
   jenkins_plugin:
     name: build-pipeline-plugin
-    state: latest
+    version: "1.5.6"
     with_dependencies: yes
     params: "{{ jenkins_params_plugins }}"
+- name: Install Build Pipeline Plugin Dependencies
+  jenkins_plugin:
+    name: parameterized-trigger
+    version:  "2.17"
+- name: Install Build Pipeline Plugin Dependencies
+  jenkins_plugin:
+    name: jquery
+    version:  "1.7.2-1"
 - name: Install Publish Over SSH Plugin
   jenkins_plugin:
     name: publish-over-ssh
-    state: latest
+    version: "1.14"
     with_dependencies: yes
     params: "{{ jenkins_params_plugins }}"
 - name: Install SSH Plugin
   jenkins_plugin:
     name: ssh
-    state: latest
+    version: "2.4"
     with_dependencies: yes
     params: "{{ jenkins_params_plugins }}"
 - name: Install SonarQube Plugin
   jenkins_plugin:
     name: sonar
-    state: latest
+    version: "2.5"
     with_dependencies: yes
     params: "{{ jenkins_params_plugins }}"
+- name: Install SonarQube Plugin Dependencies
+  jenkins_plugin:
+    name: jquery
+    version:  "v1.11.2-0"
 - name: Install Artifactory Plugin
   jenkins_plugin:
     name: artifactory
-    state: latest
+    version: "2.8.2"
     with_dependencies: yes
     params: "{{ jenkins_params_plugins }}"
+- name: Install Artifactory Plugin Dependencies
+  jenkins_plugin:
+    name: ivy
+    version: "1.17"
+- name: Install Artifactory Plugin Dependencies
+  jenkins_plugin:
+    name: gradle
+    version:  "1.15"
+- name: Install Artifactory Plugin Dependencies
+  jenkins_plugin:
+    name: workflow-cps
+    version:  "2.13"
+- name: Install Artifactory Plugin Dependencies
+  jenkins_plugin:
+    name: credentials
+    version:  "1.22"
+- name: Install Artifactory Plugin Dependencies
+  jenkins_plugin:
+    name: workflow-step-api
+    version:  "2.3"
 - name: Install jenkins-python (Ansible Dependency)
   pip:
     name: python-jenkins
