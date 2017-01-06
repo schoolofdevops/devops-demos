@@ -77,6 +77,6 @@
 - name: Wait for containers to get ready
   local_action: wait_for
     port: 22
-    host: "{{ ansible_ssh_host | default(jenkins_url) }}"
+    host: "{{ jenkins_url }}"
     search_regex: OpenSSH
     delay:  10
