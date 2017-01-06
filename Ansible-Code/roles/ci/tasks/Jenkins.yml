@@ -7,13 +7,6 @@
   user:
     name: jenkins
     group: jenkins
-- name: Copy Jenkins configurations
-  template:
-    src:  templates/jenkins.xml.j2
-    dest: /home/ubuntu/docker/jenkins_home/config.xml
-    owner: ubuntu
-    group:  ubuntu
-    mode: 0777
 - name: Install Build Pipeline Plugin
   jenkins_plugin:
     name: build-pipeline-plugin
