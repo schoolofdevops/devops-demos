@@ -21,13 +21,13 @@
   copy:
     src: files/tomcat-users.xml
     dest: docker/tomcat/tomcat-users.xml
-- name: Copy Jenkins configurations
-  template:
-    src:  templates/jenkins.xml.j2
-    dest: /home/ubuntu/docker/jenkins_home/config.xml
-    owner: ubuntu
-    group:  ubuntu
-    mode: 0777
+#- name: Copy Jenkins configurations
+#  template:
+#    src:  templates/jenkins.xml.j2
+#    dest: /home/ubuntu/docker/jenkins_home/config.xml
+#    owner: ubuntu
+#    group:  ubuntu
+#    mode: 0777
 # Bring up the infrastructure
 - name: Docker compose up
 #become: true
