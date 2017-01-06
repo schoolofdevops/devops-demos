@@ -82,6 +82,46 @@
     name: git
     version:  "3.0.1"
     params: "{{ jenkins_params_plugins }}"
+- name: Install Git Plugin Dependencies
+  jenkins_plugin:
+    name: workflow-scm-step
+    version:  "1.14.2"
+    params: "{{ jenkins_params_plugins }}"
+- name: Install Git Plugin Dependencies
+  jenkins_plugin:
+    name: git-client
+    version:  "2.1.0"
+    params: "{{ jenkins_params_plugins }}"
+- name: Install Git Plugin Dependencies
+  jenkins_plugin:
+    name: mailer
+    version:  "1.18"
+    params: "{{ jenkins_params_plugins }}"
+- name: Install Git Plugin Dependencies
+  jenkins_plugin:
+    name: matrix-project
+    version:  "1.7.1"
+    params: "{{ jenkins_params_plugins }}"
+- name: Install Git Plugin Dependencies
+  jenkins_plugin:
+    name: promoted-builds
+    version:  "2.27"
+    params: "{{ jenkins_params_plugins }}"
+- name: Install Git Plugin Dependencies
+  jenkins_plugin:
+    name: scm-api
+    version:  "1.3"
+    params: "{{ jenkins_params_plugins }}"
+- name: Install Git Plugin Dependencies
+  jenkins_plugin:
+    name: ssh-credentials
+    version:  "1.12"
+    params: "{{ jenkins_params_plugins }}"
+- name: Install Git Plugin Dependencies
+  jenkins_plugin:
+    name: token-macro
+    version:  "1.12.1"
+    params: "{{ jenkins_params_plugins }}"
 - name: Install jenkins-python (Ansible Dependency)
   pip:
     name: python-jenkins
