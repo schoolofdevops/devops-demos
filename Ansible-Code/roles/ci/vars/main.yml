@@ -2,6 +2,7 @@
 jenkins_url:  http://192.168.0.73:8080
 jenkins_user: admin
 jenkins_pass: 1nitCr0n
+jenkins_token:  6acb19de600ea1c3e496998e7afdd1c0
 
 jenkins_params_plugins:
   url: http://192.168.0.73:8080

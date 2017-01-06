@@ -47,4 +47,4 @@
     name: build
     url:  "{{ jenkins_url }}"
     user: "{{ jenkins_user }}"
-    password: "{{ jenkins_pass }}"
+    token:  "{{ jenkins_token }}"
