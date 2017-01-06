@@ -44,7 +44,7 @@
 - name: Install SonarQube Plugin Dependencies
   jenkins_plugin:
     name: jquery
-    version:  "v1.11.2-0"
+    version:  "v1.11.2"
     params: "{{ jenkins_params_plugins }}"
 - name: Install Artifactory Plugin
   jenkins_plugin:
