@@ -30,8 +30,8 @@
 #    mode: 0777
 # Bring up the infrastructure
 - name: Docker compose up
-  async:  35
-  poll: 0
+#  async:  35
+#  poll: 0
 #become: true
 #become_user: root
   docker_service:
