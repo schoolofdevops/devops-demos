@@ -30,6 +30,8 @@
 #    mode: 0777
 # Bring up the infrastructure
 - name: Docker compose up
+  async:  35
+  poll: 0
 #become: true
 #become_user: root
   docker_service:
@@ -74,9 +76,3 @@
 
 - debug:
     var:  test
-- name: Wait for containers to get ready
-  local_action: wait_for
-    port: 22
-    host: "{{ jenkins_url }}"
-    search_regex: OpenSSH
-    delay:  10
