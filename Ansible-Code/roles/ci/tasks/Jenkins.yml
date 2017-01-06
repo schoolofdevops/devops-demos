@@ -17,10 +17,12 @@
   jenkins_plugin:
     name: parameterized-trigger
     version:  "2.17"
+    params: "{{ jenkins_params_plugins }}"
 - name: Install Build Pipeline Plugin Dependencies
   jenkins_plugin:
     name: jquery
     version:  "1.7.2-1"
+    params: "{{ jenkins_params_plugins }}"
 - name: Install Publish Over SSH Plugin
   jenkins_plugin:
     name: publish-over-ssh
@@ -43,6 +45,7 @@
   jenkins_plugin:
     name: jquery
     version:  "v1.11.2-0"
+    params: "{{ jenkins_params_plugins }}"
 - name: Install Artifactory Plugin
   jenkins_plugin:
     name: artifactory
@@ -53,22 +56,27 @@
   jenkins_plugin:
     name: ivy
     version: "1.17"
+    params: "{{ jenkins_params_plugins }}"
 - name: Install Artifactory Plugin Dependencies
   jenkins_plugin:
     name: gradle
     version:  "1.15"
+    params: "{{ jenkins_params_plugins }}"
 - name: Install Artifactory Plugin Dependencies
   jenkins_plugin:
     name: workflow-cps
     version:  "2.13"
+    params: "{{ jenkins_params_plugins }}"
 - name: Install Artifactory Plugin Dependencies
   jenkins_plugin:
     name: credentials
     version:  "1.22"
+    params: "{{ jenkins_params_plugins }}"
 - name: Install Artifactory Plugin Dependencies
   jenkins_plugin:
     name: workflow-step-api
     version:  "2.3"
+    params: "{{ jenkins_params_plugins }}"
 - name: Install jenkins-python (Ansible Dependency)
   pip:
     name: python-jenkins
