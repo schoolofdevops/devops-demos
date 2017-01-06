@@ -40,7 +40,7 @@
       version: '2'
       services:
         jenkins:
-          image: jenkins:2.19.1
+          image: jenkins:2.19.4-alpine
           ports:
             - "8080:8080"
             - "50000:50000"
