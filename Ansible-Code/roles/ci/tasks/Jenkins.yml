@@ -38,6 +38,7 @@
   jenkins_plugin:
     name: artifactory
     state: latest
+    with_dependencies: yes
     params: "{{ jenkins_params_plugins }}"
 - name: Install jenkins-python (Ansible Dependency)
   pip:
