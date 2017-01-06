@@ -21,7 +21,7 @@
 - name: Install Build Pipeline Plugin Dependencies
   jenkins_plugin:
     name: jquery
-    version:  "1.7.2-1"
+    version:  "1.11.2-0"
     params: "{{ jenkins_params_plugins }}"
 - name: Install Publish Over SSH Plugin
   jenkins_plugin:
@@ -44,7 +44,7 @@
 - name: Install SonarQube Plugin Dependencies
   jenkins_plugin:
     name: jquery
-    version:  "v1.11.2"
+    version:  "1.11.2-0"
     params: "{{ jenkins_params_plugins }}"
 - name: Install Artifactory Plugin
   jenkins_plugin:
