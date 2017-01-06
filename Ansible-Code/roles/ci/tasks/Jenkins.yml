@@ -77,6 +77,11 @@
     name: workflow-step-api
     version:  "2.3"
     params: "{{ jenkins_params_plugins }}"
+- name: Install Git Plugin
+  jenkins_plugin:
+    name: git
+    version:  "3.0.1"
+    params: "{{ jenkins_params_plugins }}"
 - name: Install jenkins-python (Ansible Dependency)
   pip:
     name: python-jenkins
