@@ -11,21 +11,25 @@
   jenkins_plugin:
     name: build-pipeline-plugin
     state: latest
+    with_dependencies: yes
     params: "{{ jenkins_params_plugins }}"
 - name: Install Publish Over SSH Plugin
   jenkins_plugin:
     name: publish-over-ssh
     state: latest
+    with_dependencies: yes
     params: "{{ jenkins_params_plugins }}"
 - name: Install SSH Plugin
   jenkins_plugin:
     name: ssh
     state: latest
+    with_dependencies: yes
     params: "{{ jenkins_params_plugins }}"
 - name: Install SonarQube Plugin
   jenkins_plugin:
     name: sonar
     state: latest
+    with_dependencies: yes
     params: "{{ jenkins_params_plugins }}"
 - name: Install Artifactory Plugin
   jenkins_plugin:
