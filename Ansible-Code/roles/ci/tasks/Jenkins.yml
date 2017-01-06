@@ -70,7 +70,7 @@
 - name: Install Artifactory Plugin Dependencies
   jenkins_plugin:
     name: credentials
-    version:  "1.22"
+    version:  "2.1.8"
     params: "{{ jenkins_params_plugins }}"
 - name: Install Artifactory Plugin Dependencies
   jenkins_plugin:
@@ -121,6 +121,11 @@
   jenkins_plugin:
     name: token-macro
     version:  "1.12.1"
+    params: "{{ jenkins_params_plugins }}"
+- name: Install Git Plugin Dependencies
+  jenkins_plugin:
+    name: credentials
+    version:  "2.1.8"
     params: "{{ jenkins_params_plugins }}"
 - name: Install jenkins-python (Ansible Dependency)
   pip:
