@@ -11,8 +11,8 @@
   template:
     src:  templates/jenkins.xml.j2
     dest: /home/ubuntu/docker/jenkins_home/config.xml
-    owner: jenkins
-    group:  jenkins
+    owner: ubuntu
+    group:  ubuntu
     mode: 0777
 - name: Install Build Pipeline Plugin
   jenkins_plugin:
