@@ -37,7 +37,6 @@
     state: latest
     with_dependencies: yes
     params: "{{ jenkins_params_plugins }}"
-- name:
 - name: Install jenkins-python (Ansible Dependency)
   pip:
     name: python-jenkins
