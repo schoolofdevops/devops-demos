@@ -12,3 +12,4 @@
     name: build-pipeline-plugin
     version: "1.5.6"
     with_dependencies: yes
+    params: "{{ jenkins_params_plugins }}"
