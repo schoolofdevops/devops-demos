@@ -188,15 +188,15 @@ image script (image.sh)
 # Custom Tomcat Image  
   * PWD: /docker/  
   * Dockerfile:  
-    ```
-    FROM tomcat:latest
-		ENV CATALINA_HOME /usr/local/tomcat
-		ENV PATH $CATALINA_HOME/bin:$PATH
-		WORKDIR $CATALINA_HOME
-		ADD workspace/Deploy/CMADSession.war /usr/local/tomcat/webapps/
-		EXPOSE 8080
-		CMD ["catalina.sh", "run"]  
-    ```  
+```
+FROM tomcat:latest
+ENV CATALINA_HOME /usr/local/tomcat
+ENV PATH $CATALINA_HOME/bin:$PATH
+WORKDIR $CATALINA_HOME
+ADD workspace/Deploy/CMADSession.war /usr/local/tomcat/webapps/
+EXPOSE 8080
+CMD ["catalina.sh", "run"]  
+```  
 
 # Docker Registry
   * Credentials:
