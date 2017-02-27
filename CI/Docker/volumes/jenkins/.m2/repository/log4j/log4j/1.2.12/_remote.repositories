@@ -1,6 +1,0 @@
-#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-#Mon Feb 27 10:22:13 UTC 2017
-log4j-1.2.12.jar>central=
-log4j-1.2.12.pom>central=
-log4j-1.2.12.jar>artifactory-release=
-log4j-1.2.12.pom>artifactory-release=
