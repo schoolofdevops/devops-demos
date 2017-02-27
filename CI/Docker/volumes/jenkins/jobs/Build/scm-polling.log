@@ -1,8 +1,0 @@
-Started on Feb 27, 2017 10:49:00 AM
-Using strategy: Default
-[poll] Last Built Revision: Revision ac5504942defdda6439cedb5a33eec3ede541f1e (refs/remotes/origin/master)
- > git ls-remote -h http://github.com/schoolofdevops/demo.git # timeout=10
-Found 2 remote heads on http://github.com/schoolofdevops/demo.git
-[poll] Latest remote head revision on refs/heads/master is: ac5504942defdda6439cedb5a33eec3ede541f1e - already built by 6
-Done. Took 1.6 sec
-No changes
