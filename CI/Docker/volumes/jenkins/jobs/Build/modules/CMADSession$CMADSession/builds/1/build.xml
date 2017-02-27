@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.maven.MavenBuild plugin="maven-plugin@2.15.1">
+  <actions>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record/>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+    <hudson.maven.reporters.MavenArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+      <pomArtifact>
+        <groupId>CMADSession</groupId>
+        <artifactId>CMADSession</artifactId>
+        <version>0.0.12-SNAPSHOT</version>
+        <type>pom</type>
+        <fileName>pom.xml</fileName>
+        <canonicalName>CMADSession-0.0.12-SNAPSHOT.pom</canonicalName>
+        <md5sum>8ad71fa955a2db503487ad08b57d6b36</md5sum>
+      </pomArtifact>
+      <mainArtifact reference="../pomArtifact"/>
+      <attachedArtifacts/>
+    </hudson.maven.reporters.MavenArtifactRecord>
+  </actions>
+  <queueId>-1</queueId>
+  <timestamp>1488181991306</timestamp>
+  <startTime>1488181994051</startTime>
+  <result>FAILURE</result>
+  <duration>308</duration>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/workspace/Build</workspace>
+</hudson.maven.MavenBuild>

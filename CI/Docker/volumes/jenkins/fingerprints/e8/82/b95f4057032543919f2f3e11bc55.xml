@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-02-27 07:43:56.302 UTC</timestamp>
+  <original>
+    <name>Package/CMADSession:CMADSession</name>
+    <number>3</number>
+  </original>
+  <md5sum>e882b95f4057032543919f2f3e11bc55</md5sum>
+  <fileName>CMADSession:CMADSession.war</fileName>
+  <usages>
+    <entry>
+      <string>Package/CMADSession:CMADSession</string>
+      <ranges>3</ranges>
+    </entry>
+    <entry>
+      <string>Package</string>
+      <ranges>3</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

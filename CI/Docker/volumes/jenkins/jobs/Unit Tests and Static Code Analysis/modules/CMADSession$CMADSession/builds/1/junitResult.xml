@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result plugin="junit@1.20">
+  <suites>
+    <suite>
+      <file>/var/jenkins_home/workspace/Unit Tests and Static Code Analysis/target/surefire-reports/TEST-com.mydomain.CalculatorTest.xml</file>
+      <name>com.mydomain.CalculatorTest</name>
+      <duration>0.002</duration>
+      <time>0.002</time>
+      <cases>
+        <case>
+          <duration>0.002</duration>
+          <className>com.mydomain.CalculatorTest</className>
+          <testName>testAdd</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>0.002</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

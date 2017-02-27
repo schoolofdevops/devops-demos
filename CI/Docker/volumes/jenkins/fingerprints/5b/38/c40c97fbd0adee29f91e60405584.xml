@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-02-27 07:43:56.303 UTC</timestamp>
+  <md5sum>5b38c40c97fbd0adee29f91e60405584</md5sum>
+  <fileName>junit:junit-4.12.jar</fileName>
+  <usages>
+    <entry>
+      <string>Unit Tests and Static Code Analysis</string>
+      <ranges>1-3</ranges>
+    </entry>
+    <entry>
+      <string>Unit Tests and Static Code Analysis/CMADSession:CMADSession</string>
+      <ranges>1-3</ranges>
+    </entry>
+    <entry>
+      <string>Package/CMADSession:CMADSession</string>
+      <ranges>3-5</ranges>
+    </entry>
+    <entry>
+      <string>Package</string>
+      <ranges>3-5</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
