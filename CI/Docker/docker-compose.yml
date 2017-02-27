@@ -1,13 +1,12 @@
 version: '3'
 services:
   jenkins:
-    image: jenkins
+    image: schoolofdevops/jenkins_ansible
     ports:
       - "8080:8080"
       - "50000:50000"
     volumes:
-      - ./volumes/jenkins:/var/jenkins_home
-      - ./volumes/ansible:/usr/bin/ansible-playbook
+      - ./volumes/jenkins/playbooks/deploy.yml:/var/jenkins_home/playbooks/deploy.yml
     container_name: jenkins
 
   artifactory:
